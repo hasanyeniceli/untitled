@@ -10,7 +10,9 @@ public class BasicNavigation {
         WebDriverManager.chromedriver().setup();
         // 2-Create intance for the chrome driver
         WebDriver driver =new ChromeDriver();
+        //SessionId=02125FHTDJ4865RTER8;
         // 3- test if driver working as expected
+
         driver.get("https://www.tesla.com");
         String currentTitle=driver.getTitle();
         System.out.println("currentTitle = " + currentTitle);
@@ -28,7 +30,12 @@ public class BasicNavigation {
         currentTitle=driver.getTitle();
         System.out.println("currentTitle = " + currentTitle);
         System.out.println("driver.getCurrentUrl() = " + driver.getCurrentUrl());
-
+        driver.manage().window().maximize();
+        driver.manage().window().fullscreen();
+        // close the current browser
+        driver.close();
+        // finis the session
+        driver.quit();
 
     }
 }
