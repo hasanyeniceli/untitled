@@ -21,6 +21,11 @@ public class T2_getText_getAttribute {
 
        String expectedrememberLabel="Remember me on this computer";
        String actualremmberMeLaber=rememberLabel.getText();
+       if (actualremmberMeLaber.equals(expectedrememberLabel)){
+           System.out.println("PAssed");
+       }else{
+           System.out.println("Failed");
+       }
 
 
 
