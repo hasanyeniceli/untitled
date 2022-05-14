@@ -30,6 +30,8 @@ public class T5_getText_getAttribute {
         // name attribute has "firstname" value
         //WebElement firstNameInput = driver.findElement(By.name("firstname"));
 
+        driver.close();
+
 
 
     }
