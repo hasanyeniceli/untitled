@@ -34,6 +34,7 @@ public class T1_xpath_cssSelector_practice {
         WebElement forgetpassheader= driver.findElement(By.cssSelector("div.example > h2"));
 
         // Locate header using xpath, and using web elements text "Forgot Password"
-
+        WebElement forgetpassheader2= driver.findElement(By.xpath("//h2[.='Forget Password']"));
+        WebElement forgetpasheader02=driver.findElement(By.xpath(""))
     }
 }
