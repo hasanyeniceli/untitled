@@ -29,21 +29,10 @@ public class T5_getText_getAttribute {
         // we are locating the web element using "name" locator
         // name attribute has "firstname" value
         //WebElement firstNameInput = driver.findElement(By.name("firstname"));
-        WebElement firstNameInput = driver.findElement(By.className("form-control"));
 
-        //5- Verify placeholder attribute’s value is as expected:
-        // Expected: first name
-        String expectedPlaceHolder = "first name";
-        String actualPlaceHolder=firstNameInput.getAttribute("placeholder");
-        //String actualPlaceHolder = firstNameInput.getAttribute("placeholder");
-
-        if (actualPlaceHolder.equals(expectedPlaceHolder)){
-            System.out.println("pass");
-
-        }else{
-            System.out.println("failed");
-        }
         driver.close();
+
+
 
     }
 }
