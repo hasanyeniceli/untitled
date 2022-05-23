@@ -22,5 +22,12 @@ public class T5_checkboxes {
         //3. Confirm checkbox #2 is SELECTED by default.Expected TRUE
         System.out.println("checkbox2.isSelected()   Expected TRUE = Expected TRUE " + checkbox2.isSelected());
 
+      //  4. Click checkbox #1 to select it.
+                Thread.sleep(2000);
+        checkbox1.click();
+
+        //5. Click checkbox #2 to deselect it.
+        Thread.sleep(2000);
+        checkbox2.click();
     }
 }
