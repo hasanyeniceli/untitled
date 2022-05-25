@@ -35,7 +35,7 @@ public class TestNG_Selenium {
     driver.get("https://google.com");
     String actualTitle= driver.getTitle();
     System.out.println("actualTitle = " + actualTitle);
-    String expectedTitle="Google1";
+    String expectedTitle="Google";
     Assert.assertEquals(actualTitle,expectedTitle,"it is not matchinng");
     Assert.assertTrue(actualTitle.equals(expectedTitle),"there is a mistake");
 

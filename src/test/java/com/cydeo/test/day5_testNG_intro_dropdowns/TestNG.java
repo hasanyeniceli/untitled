@@ -26,7 +26,7 @@ public class TestNG {
         // Assert Equals compares 2 of the same thing
         String actual="apple";
         String expected="apple";
-        Assert.assertEquals(actual,expected);
+        Assert.assertTrue(actual.equals(expected),"Faiing");
 
     }
     @Test
