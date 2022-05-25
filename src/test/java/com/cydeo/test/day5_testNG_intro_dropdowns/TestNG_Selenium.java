@@ -39,7 +39,6 @@ public class TestNG_Selenium {
     Assert.assertEquals(actualTitle,expectedTitle,"it is not matchinng");
     Assert.assertTrue(actualTitle.equals(expectedTitle),"there is a mistake");
 
-
-
 }
-}
+
+    }
