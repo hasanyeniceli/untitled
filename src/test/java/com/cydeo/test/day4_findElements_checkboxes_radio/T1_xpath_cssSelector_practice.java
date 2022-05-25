@@ -52,6 +52,10 @@ public class T1_xpath_cssSelector_practice {
 
         //d. E-mail input box
         WebElement inputBox_ex1 = driver.findElement(By.xpath("//input[@name='email']"));
+        inputBox_ex1.sendKeys("love");
+        WebElement button= driver.findElement(By.cssSelector("button[class='radius']"));
+        button.click();
+
 
         //Locate inputBox using xpath contains method
 
