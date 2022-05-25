@@ -44,7 +44,7 @@ public class T4_SimpleDropdowns {
         String expectedStateDropdownText = "Select a State";
 
         String actualStateDropdownText = stateDropdown.getFirstSelectedOption().getText(); // to find an element
-//       put the element to string than use select object tanh use getfirst method to find the element than use gettext to find the text
+   //   put the element to string than use select object tanh use getfirst method to find the element than use gettext to find the text
         Assert.assertEquals(actualStateDropdownText, expectedStateDropdownText); // check it
 
         //Assert.assertEquals(stateDropdown.getFirstSelectedOption().getText(), "Select a State");
