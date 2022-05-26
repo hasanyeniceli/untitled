@@ -29,7 +29,9 @@ public class T5_Windows_Practice {
     @Test
     public void multiple_windos_test(){
         String windowHandle=driver.getWindowHandle();
-        System.out.println("Title of the windoew Title :"+ driver.getTitle());
+
+        System.out.println("Title of the window Title :"+ driver.getTitle());
+
         System.out.println("windowHandle = " + windowHandle);
 
 
@@ -58,9 +60,9 @@ public class T5_Windows_Practice {
 
         actualTitle=driver.getTitle();
 
-        Assert.assertEquals(actualTitle,expectedTitle,"not match");
+        Assert.assertEquals(actualTitle,newExpectedtitle,"not match");
 
-        System.out.println("actualTitle aftre click= " + actualTitle);
+        System.out.println("actualTitle after click= " + actualTitle);
 
     }
 
