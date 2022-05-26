@@ -44,7 +44,7 @@ public class T1_Alert_Practices {
         String expectedResult="You successfully clicked an alert";
         Assert.assertEquals(actualresult,expectedResult);
 
-        //driver.switchTo().activeElement();
+
 
         WebElement jsConfirm= driver.findElement(By.xpath("//button[@onclick='jsConfirm()']"));
         jsConfirm.click();
