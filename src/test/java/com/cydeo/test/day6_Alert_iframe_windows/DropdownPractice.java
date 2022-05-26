@@ -10,6 +10,7 @@ import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
+import java.util.List;
 import java.util.concurrent.TimeUnit;
 
 public class DropdownPractice {
@@ -61,7 +62,12 @@ public class DropdownPractice {
         Select yeardropdown = new Select(driver.findElement(By.xpath("//select[@id='year']")));
         Select monthdropdown = new Select(driver.findElement(By.xpath("//select[@id='month']")));
         Select daydropdown = new Select(driver.findElement(By.xpath("//select[@id='day']")));
+        List<WebElement> allTheOption= driver.findElements(By.xpath("//select[@id='month']"));
 
+        for (WebElement each : allTheOption) {
+            System.out.println(each.getText());
+
+        }
 Thread.sleep(1500);
         yeardropdown.selectByVisibleText("1923");
         Thread.sleep(1000);
