@@ -51,6 +51,9 @@ public WebDriver driver;
 @Test
     public void test3(){
     WebTablesUtils.orderverify(driver,"Bart Fisher","01/16/2021");
-
+WebElement checbutton= driver.findElement(By.xpath("//input[@id='ctl00_MainContent_orderGrid_ctl02_OrderSelector']"));
+    System.out.println(checbutton.isSelected());
+    checbutton.click();
+    checbutton.isEnabled();
 }
 }
