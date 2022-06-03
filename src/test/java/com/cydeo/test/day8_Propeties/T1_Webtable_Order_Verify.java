@@ -1,4 +1,4 @@
-package com.cydeo.test.day48_Propeties;
+package com.cydeo.test.day8_Propeties;
 
 import com.cydeo.utilities.WebDriverFactory;
 import com.cydeo.utilities.WebTablesUtils;
