@@ -34,7 +34,7 @@ public class Javafaker_Practice {
         System.out.println("faker.chuckNorris().fact() = "
                 + faker.chuckNorris().fact().replaceAll("Chuck Norris", "Muhtar"));
 
-
+        System.out.println("faker.name().username() = " + faker.name().username());
 
     }
 }
